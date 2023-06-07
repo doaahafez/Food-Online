@@ -14,10 +14,10 @@ export class FoodPageComponent {
      private router: Router) {
     activatedRoute.params.subscribe((params) => {
       if(params.id)
-      // foodService.getFoodById(params.id).subscribe(serverFood => {
-      //   this.food = serverFood;
-      // });
-      this.food=foodService.getFoodById(params.id);
+      foodService.getFoodById(params.id).subscribe(serverFood => {
+        this.food = serverFood;
+      });
+      // this.food=foodService.getFoodById(params.id);
     })
    }
 

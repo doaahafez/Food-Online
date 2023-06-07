@@ -9,7 +9,12 @@ const routes: Routes = [
   {path:'search/:searchTerm',component:HomeComponent},
   {path: 'tag/:tag', component: HomeComponent },
   {path:'food/:id',component:FoodPageComponent},
-  {path:'cart-page',component:CartPageComponent}
+  {path:'cart-page',component:CartPageComponent},
+  // {path:'login', component: LoginPageComponent},
+  // {path:'register', component: RegisterPageComponent},
+  // {path:'checkout', component: CheckoutPageComponent, canActivate:[AuthGuard]},
+  // {path:'payment', component: PaymentPageComponent, canActivate:[AuthGuard]},
+  // {path:'track/:orderId', component: OrderTrackPageComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({
